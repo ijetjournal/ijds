@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -8,8 +9,8 @@
 <title>IJDS - FAQ</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="icon" type="image/png" href="http://www.ijdsjournal.org/images/myicon.jpg" />
-<meta name="description" content="IJDS - International Journal of Dental Sciences" />
-<meta name="keywords" content="IJDS - International Journal of Dental Sciences" />
+<meta name="description" content="IJDS - International Journal of Dental Studies" />
+<meta name="keywords" content="IJDS - International Journal of Dental Studies" />
 <link rel="stylesheet" href="http://www.ijdsjournal.org/css/zerogrid.css">
 <link rel="stylesheet" href="http://www.ijdsjournal.org/css/style.css">
 <link rel="stylesheet" href="http://www.ijdsjournal.org/css/responsive.css">
@@ -20,10 +21,51 @@
 <script type="text/javascript" src="http://www.ijdsjournal.org/js/ddsmoothmenu.js"></script>
 </head>
 <body>
+
 <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.ijdsjournal.org");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+function myFunction() {
+    var month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+    var date = new Date(), y = date.getFullYear(), m = date.getMonth();
+    var firstDay = new Date(y, m, 1);
+    var lastDay = new Date(y, m + 1, 0);
+    //alert(lastDay.getDate());
+
+    var d = new Date();
+    //var mon = month[d.getMonth()];
+    var year=d.getFullYear();
+    var monthClass=document.getElementsByClassName("monthDemo");
+    for(var i = 0, length = monthClass.length; i < length; i++) {
+      monthClass[i].innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year;
+     }
+
+    var dateClass=document.getElementsByClassName("dateDemo");
+    for(var j = 0, length1 = dateClass.length; j < length1; j++) {
+    	dateClass[j].innerHTML = lastDay.getDate() + " st " + month[d.getMonth()]+" "+year;
+    	//alert(lastDay.getDate() + " st " + month[d.getMonth()]+" "+year)
+     }
+
+
+
+    /* document.getElementsByClassName("monthDemo").innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year; */
+}
+
+window.onload = function() {
+  myFunction();
+};
 </script>
+
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -60,7 +102,7 @@ try {
    <div class="wrap-header zerogrid" style="position:relative;">
      <img src="http://www.ijdsjournal.org/images/myicon.jpg" alt="IJDS" width="185" height="200" /><br>
 
-<div class="logocontent" style="left:200px; top:55px; position:absolute; font-size:30px; color:#086A87; text-align:center;">International Journal of Dental Sciences</div>
+<div class="logocontent" style="left:200px; top:55px; position:absolute; font-size:30px; color:#086A87; text-align:center;">International Journal of Dental Studies</div>
 
 </div>
 <!--<div class="logocontent" style="left:350px; top:85px; position:absolute; font-size:25px; color:#000000; text-align:center;"><p style="left:20px"; style="font-size:18px;font-size:5px; color:#18b3e4; margin:8px;">International Journals </p>
@@ -173,7 +215,7 @@ try {
         <h2>Call For Paper</h2>
       </div>
       <div class="content" style="">
-<div class="info" style="font-size:14px;text-align:center;">Submission Last Date :  <p style="font-weight:bold; color:#08088A; margin-top:-5px; margin-bottom:-5px;">31 st  August 2016</p></div>
+<div class="info" style="font-size:14px;text-align:center;">Submission Last Date :  <p style="font-weight:bold; color:#08088A; margin-top:-5px; margin-bottom:-5px;"><span class="dateDemo"></span></p></div>
                             <div class="info" style="font-size:14px;text-align:center;">Acceptance Notification :  <p style=" font-weight:bold; color:#08088A; margin-top:-5px; margin-bottom:-5px;">in 3 days</p></div>
                             <div class="info" style="font-size:14px;text-align:center;">Publication Date :  <p style=" font-weight:bold; color:#08088A; margin-top:-8px;">in 2 days</p></div>
 
@@ -263,14 +305,7 @@ $(window).load(function() {
 });
 </script>
 		<!-- Slider -->
-		<article>
-		  <div class="content" id="slider" style=" width:100%; margin-top:0px;">
-					 <p><img src="http://www.ijdsjournal.org/images/1.jpg" alt=""/></p>
-							 <p><img src="http://www.ijdsjournal.org/images/2.jpg" alt=""/></p>
-							 <p><img src="http://www.ijdsjournal.org/images/3.jpg" alt=""/></p>
-					  </div>
-		  <div class="clear"></div>
-	  </article>
+		
 	          <article>
             <div class="heading">
               <h2>IJDS - Frequently Asked Questions:</h2>

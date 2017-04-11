@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,11 +7,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>IJDS - International Journal of Dental Sciences</title>
+<title>IJDS - International Journal of Dental Studies</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="icon" type="image/png" href="http://www.ijdsjournal.org/images/myicon.jpg" />
-<meta name="description" content="IJDS - International Journal of Dental Sciences" />
-<meta name="keywords" content="IJDS - International Journal of Dental Sciences" />
+<meta name="description" content="IJDS - International Journal of Dental Studies" />
+<meta name="keywords" content="IJDS - International Journal of Dental Studies" />
 <link rel="stylesheet" href="http://www.ijdsjournal.org/css/zerogrid.css">
 <link rel="stylesheet" href="http://www.ijdsjournal.org/css/style.css">
 <link rel="stylesheet" href="http://www.ijdsjournal.org/css/responsive.css">
@@ -22,10 +23,51 @@
 <script type="text/javascript" src="http://www.ijdsjournal.org/js/ddsmoothmenu.js"></script>
 </head>
 <body>
+
 <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.ijdsjournal.org");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+function myFunction() {
+    var month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+    var date = new Date(), y = date.getFullYear(), m = date.getMonth();
+    var firstDay = new Date(y, m, 1);
+    var lastDay = new Date(y, m + 1, 0);
+    //alert(lastDay.getDate());
+
+    var d = new Date();
+    //var mon = month[d.getMonth()];
+    var year=d.getFullYear();
+    var monthClass=document.getElementsByClassName("monthDemo");
+    for(var i = 0, length = monthClass.length; i < length; i++) {
+      monthClass[i].innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year;
+     }
+
+    var dateClass=document.getElementsByClassName("dateDemo");
+    for(var j = 0, length1 = dateClass.length; j < length1; j++) {
+    	dateClass[j].innerHTML = lastDay.getDate() + " st " + month[d.getMonth()]+" "+year;
+    	//alert(lastDay.getDate() + " st " + month[d.getMonth()]+" "+year)
+     }
+
+
+
+    /* document.getElementsByClassName("monthDemo").innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year; */
+}
+
+window.onload = function() {
+  myFunction();
+};
 </script>
+
 <script type="text/javascript">
 try {
 } catch(err) {}</script>
@@ -34,7 +76,7 @@ try {
    <div class="wrap-header zerogrid" style="position:relative;">
      <img src="http://www.ijdsjournal.org/images/myicon.jpg" alt="IJDS" width="185" height="200" /><br>
 
-<div class="logocontent" style="left:200px; top:55px; position:absolute; font-size:30px; color:#086A87; text-align:center;">International Journal of Dental Sciences</div>
+<div class="logocontent" style="left:200px; top:55px; position:absolute; font-size:30px; color:#086A87; text-align:center;">International Journal of Dental Studies</div>
 
 </div>
 <!--<div class="logocontent" style="left:350px; top:85px; position:absolute; font-size:25px; color:#000000; text-align:center;"><p style="left:20px"; style="font-size:18px;font-size:5px; color:#18b3e4; margin:8px;">International Journals </p>
@@ -216,7 +258,7 @@ $(document).ready(function(){
 
 </marquee>
 
-    <center><a href="http://www.ijdsjournal.org/callforpaper.html"><font face="arial" font color="#08088A" font size="4"><strong><u> IJDS   Call For Paper August 2016<img src="http://www.ijdsjournal.org/images/new.gif" align="#" style="margin:0px"></u></strong></font></a></center>
+    <center><a href="http://www.ijdsjournal.org/callforpaper.html"><font face="arial" font color="#08088A" font size="4"><strong><u> <span class="monthDemo"></span><img src="http://www.ijdsjournal.org/images/new.gif" align="#" style="margin:0px"></u></strong></font></a></center>
 
 
 	      <div class="clear"></div>
@@ -275,7 +317,7 @@ $(document).ready(function(){
         <h2>Call For Paper</h2>
       </div>
       <div class="content" style="">
-<div class="info" style="font-size:14px;text-align:center;">Submission Last Date :  <p style="font-weight:bold; color:#08088A; margin-top:-5px; margin-bottom:-5px;">31 st  August 2016</p></div>
+<div class="info" style="font-size:14px;text-align:center;">Submission Last Date :  <p style="font-weight:bold; color:#08088A; margin-top:-5px; margin-bottom:-5px;"><span class="dateDemo"></span></p></div>
                             <div class="info" style="font-size:14px;text-align:center;">Acceptance Notification :  <p style=" font-weight:bold; color:#08088A; margin-top:-5px; margin-bottom:-5px;">in 3 days</p></div>
                             <div class="info" style="font-size:14px;text-align:center;">Publication Date :  <p style=" font-weight:bold; color:#08088A; margin-top:-8px;">in 2 days</p></div>
 
@@ -383,7 +425,7 @@ $(window).load(function() {
               <h2>Home</h2>
             </div>
             <div class="content" style="text-align:justify;">
-              <p><p><span>IJDS (International Journal of Dental Sciences, An International Open Access Journal) explores advances in research pertaining to applied, theoretical and experimental Technological studies. The goal of IJDS is to promote scientific information interchange between researchers, developers, students, and practitioners working in and around the world.</span></p>
+              <p><p><span>IJDS (International Journal of Dental Studies, An International Open Access Journal) explores advances in research pertaining to applied, theoretical and experimental Technological studies. The goal of IJDS is a peer-reviewed scientific journal dedicated to the dissemination of new knowledge and information on all sciences relevant to dentistry and to the oral cavity and associated structures in health and disease</span></p>
 <table class="MsoTableGrid" style="max-width: 95%; border-collapse: collapse; border-spacing: 0px; padding: 0px; margin: 10px 0px; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; border: none; background-color: #e5e5e5;" border="1" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
@@ -417,7 +459,9 @@ $(window).load(function() {
  <table class="MsoTableGrid" style="max-width: 95%; border-collapse: collapse; border-spacing: 0px; padding: 0px; margin: 10px 0px; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 30px; border: none; background-color: #fffff" border="1" cellspacing="0" cellpadding="0">
 
 <tbody>
-<tr><center><span style="font-family: cambria; font-size: 13pt;"><font color="#FF4000">Call for Paper : July - Aug 2016</font></span></center>
+<tr><center><span style="font-family: cambria; font-size: 13pt;"><font color="#FF4000">Call for Paper :  January - February 2017
+
+</font></span></center>
 
 
 <tr>
@@ -432,7 +476,8 @@ $(window).load(function() {
 </td>
 <td style="width: 959.6pt; border-style: solid solid solid none; border-top-color: black; border-right-color: black; border-bottom-color: black; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 0in 5.4pt;" valign="top" width="213">
 
-<p><span style="font-family: cambria; font-size: 11pt;"><font color="#000080"><strong>&nbsp;  31 st  August 2016</a></span></STRONG></p>
+<p><span style="font-family: cambria; font-size: 11pt;">&nbsp;<strong><font color="#DF0101"> <span class="dateDemo"></span><font><strong></p>
+
 </td>
 
 
