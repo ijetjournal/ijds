@@ -101,96 +101,7 @@ try {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div id="popup_box">
-<center><img src="http://www.ijdsjournal.org/images/myicon.jpg" alt="IJDS" width="55" height="55" /></center>
-<center><strong><a href="http://www.ijdsjournal.org/callforpaper.html" target="blank">IJDS  Call for Papers in original research article, Review Papers, long papers, white papers and short papers</a></strong></center><br>
-
-<center><img src="http://www.ijdsjournal.org/images/paper.gif" width="20%" hieght="50%" /></center>
-
-<p>1. <font color="#086A87"> Submit Paper</font><stong><a href="http://www.ijdsjournal.org/Submit-Paper.html" target="blank"> respective journal mail id.</a></stong></p>
-<p>2. <font color="#086A87">Acceptanace Notification</font><stong> - Within two days.</stong></p>
 <!--<p>3.<font color="#086A87">Processing Charges</font><stong><a href="http://www.ijdsjournal.org/Publication-Fee.html" target="blank"> - Click Here.</a></stong></p>-->
-
-
-
-	   <a id="popupBoxClose"><img src="http://www.ijdsjournal.org/images/x.png" style="border:2px solid;"></a>      </div>
-<style type="text/css">
-
-/* popup_box DIV-Styles*/
- #popup_box {
- display:none;
-  position:fixed;
-   _position:absolute;
-  height:250px;
-  width:400px;
-  background:#FFFFFF;
-
-  left: 360px;
-  top: 250px;
-  z-index:100;
-  margin-left: 105px;
-  padding:15px;
-  font-size:15px;
-  -moz-box-shadow: 0 0 5px #000000;
-  -webkit-box-shadow: 0 0 5px #000000;
-  box-shadow: 0 0 5px #000000;
-	}
-
-	 #container {
-	      background: #d2d2d2;
-		  width:100%;
-		  height:100%;
-		   }
-		    a{
-			cursor: pointer;
-			text-decoration:none;
-			  }
-
-			  #popupBoxClose {
-			   font-size:20px;
-			    line-height:15px;
-				right:5px;
-				top:5px;
-				 position:absolute;
-				 color:#000000;
-				 font-weight:500;
-				 } </style>
-
-
-<title> Popup Box DIV </title>
-    <script src="http://jqueryjs.googlecode.com/files/jquery-1.2.6.min.js" type="text/javascript"></script>
-
-    <script type="text/javascript">
-
-        $(document).ready( function() {
-
-            // When site loaded, load the Popupbox First
-            loadPopupBox();
-
-            $('#popupBoxClose').click( function() {
-                unloadPopupBox();
-            });
-
-            $('#container').click( function() {
-                unloadPopupBox();
-            });
-
-            function unloadPopupBox() {    // TO Unload the Popupbox
-                $('#popup_box').fadeOut("slow");
-                $("#container").css({ // this is just for style
-                    "opacity": "1"
-                });
-            }
-
-            function loadPopupBox() {    // To Load the Popupbox
-                $('#popup_box').fadeIn("slow");
-                $("#container").css({ // this is just for style
-                    "opacity": "0.3"
-                });
-            }
-        });
-    </script>
-
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -224,23 +135,24 @@ $(document).ready(function(){
   <div >
 
       <ul id="css3menu1" class="topmenu">
-        <li class="topfirst"><a href="http://www.ijdsjournal.org" style="width:110px;height:8px;line-height:9px; text-align:center;">Welcome</a></li>
-       <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">About IJDS</a>
-	             <ul>
-	    <li><a href="http://www.ijdsjournal.org/About.html" style="width:110px;height:8px;line-height:9px; text-align:left;">About us</a></li>
+         <li class="topfirst"><a href="http://www.ijdsjournal.org/index.html" style="width:110px;height:8px;line-height:9px; text-align:center;">Welcome</a></li>
+       <li class="topmenu"><a href="http://www.ijdsjournal.org/About.html" style="width:120px;height:8px;line-height:9px; text-align:center;">About IJDS</a>
+	             <!--<ul>
+	               <li><a href="http://www.ijdsjournal.org/About.html" style="width:110px;height:8px;line-height:9px; text-align:left;">About us</a>
+	               </li>
 
-	               <li><a href="http://www.ijdsjournal.org/Indexing.html" style="width:100px;height:8px;line-height:9px; text-align:left;">IJDS Indexing</a></li>
-	             </ul>
+	               <li><a href="http://www.ijdsjournal.org/Indexing.html" style="width:100px;height:8px;line-height:9px; text-align:left;">IJPP Indexing</a></li>
+	             </ul>-->
         </li>
         <li class="topmenu"><a href="http://www.ijdsjournal.org/callforpaper.html" style="width:120px;height:8px;line-height:9px; text-align:center;">Call For Paper</a> </li>
         <li class="topmenu"><a href="http://www.ijdsjournal.org/Archives.html" style="width:120px;height:8px;line-height:9px; text-align:center;">IJDS Archives</a></li>
         <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">For Author</a>
-          <ul>
+          <!-- <ul>
                 <li class="subfirst"><a href="http://www.ijdsjournal.org/publication-guidelines.html" style="width:135px;height:8px;line-height:9px; text-align:left;">Publication Guidelines</a></li>
            <li><a href="http://www.ijdsjournal.org/PeerReview.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Peer Review</a></li>
             <li><a href="http://www.ijdsjournal.org/Publication-Fee.html"  style="width:100px;height:8px;line-height:19px; text-align:left;">Processing Fee</a></li>
              <li><a href="http://www.ijdsjournal.org/Submit-Paper.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Submit Your Paper</a></li>
-          </ul>
+          </ul>-->
         </li>
 
         <li class="topmenu"><a href="http://www.ijdsjournal.org/faq.html" style="width:100px;height:8px;line-height:9px; text-align:center;">FAQs</a></li>
@@ -272,9 +184,9 @@ $(document).ready(function(){
 <li><a href="http://www.ijdsjournal.org/Home.html" title="Home">Home</a></li>
 <li><a href="http://www.ijdsjournal.org/aimscope.html" title="Aim and Scope">Aim and Scope</a></li>
 <li><a href="http://www.ijdsjournal.org/Editorialboard.html" title="Journals">Editorialboard</a></li>
-<li><a href="http://www.ijdsjournal.org/callforpaper.html" title="Call For Paper">Call For Paper</a></li>
+<!--<li><a href="http://www.ijdsjournal.org/callforpaper.html" title="Call For Paper">Call For Paper</a></li>-->
 <li><a href="http://www.ijdsjournal.org/Publication-Fee.html" title="Processing Charges">Processing Charges</a></li>
-<li><a href="http://www.ijdsjournal.org/publish_paper.html" title="Submission">Submission</a></li>
+<!--<li><a href="http://www.ijdsjournal.org/publish_paper.html" title="Submission">Submission</a></li>-->
 <li><a href="http://www.ijdsjournal.org/instructions.html" title=" Author Instructions">Author Instructions</a></li>
  </ul>
 
@@ -310,23 +222,7 @@ $(document).ready(function(){
       </div>
     </div>
 
-<div class="box">
-      <div class="heading">
-        <h2>Call For Paper</h2>
-      </div>
-      <div class="content" style="">
-<div class="info" style="font-size:14px;text-align:center;">Submission Last Date :  <p style="font-weight:bold; color:#08088A; margin-top:-5px; margin-bottom:-5px;"><span class="dateDemo"></span></p></div>
-                            <div class="info" style="font-size:14px;text-align:center;">Acceptance Notification :  <p style=" font-weight:bold; color:#08088A; margin-top:-5px; margin-bottom:-5px;">in 3 days</p></div>
-                            <div class="info" style="font-size:14px;text-align:center;">Publication Date :  <p style=" font-weight:bold; color:#08088A; margin-top:-8px;">in 2 days</p></div>
-
-
-
-      </div>
-    </div>
-
-
-
-			    <div class="box">
+    <div class="box">
       <div class="heading">
         <h2>IJDS - News</h2>
       </div>
@@ -354,16 +250,7 @@ $(document).ready(function(){
     </div>
 
 
-		<div class="box">
-      <div class="heading">
-        <h2>Online Visiters</h2>
-      </div>
-		 <br>
-<center><script type="text/javascript" src="http://widget.supercounters.com/flag.js"></script><script type="text/javascript">sc_flag(1246900,"FFFFFF","000000","cccccc",2,10,0,0)</script><br><noscript><a href="http://www.supercounters.com/">Flag Counter</a></noscript>
-</center> <br>
 
-
-    </div>
   </div>
 </div>
       <!--=========================================contact query=====================================-->
@@ -477,37 +364,7 @@ $(window).load(function() {
 <p><span style="font-family: cambria; font-size: 11pt;">&nbsp;<strong><font color="#DF0101"> <span class="dateDemo"></span><font><strong></p>
 
 </td>
-
-
-
 <tr>
-<td style="width: 1250.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="213">
-
-<ul>
-       <p><span style="font-family: cambria; font-size: 11pt;"><strong>&nbsp; Acceptanace  Notification</strong><strong> &nbsp;&nbsp; <br /></strong></span></p>
-
-
-
-<p class="MsoNormal" style="margin: 10px 10px 0.0001pt; padding: 03px; line-height: normal;"><b> </b></p>
-</td>
-<td style="width: 959.6pt; border-style: solid solid solid none; border-top-color: black; border-right-color: black; border-bottom-color: black; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 0in 5.4pt;" valign="top" width="213">
-
-<p><span style="font-family: cambria; font-size: 11pt;">&nbsp;  Within two days</a></span></p>
-</td>
-<tr>
-<td style="width: 1250.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="213">
-
-<ul>
- <p><span style="font-family: cambria; font-size: 11pt;">&nbsp;<strong>&nbsp; Publication Date<br /></strong></span></p>
-
-
-<p class="MsoNormal" style="margin: 10px 10px 0.0001pt; padding: 03px; line-height: normal;"><b> </b></p>
-</td>
-<td style="width: 959.6pt; border-style: solid solid solid none; border-top-color: black; border-right-color: black; border-bottom-color: black; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 0in 5.4pt;" valign="top" width="213">
-
-<p><span style="font-family: cambria; font-size: 11pt;">&nbsp;<span id="cloak97802"></span><script type='text/javascript'>
-  </script>After payment, within 2 days (Periodical update and rapid publication within the month)</span></p>
-</td><tr>
 <td style="width: 1250.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="213">
 
 <ul>
@@ -549,21 +406,9 @@ $(window).load(function() {
 </section>
 
 <footer>
-<div class="sitePopUp">
-	<button type="button" id="closeSitePopUp"></button>
-	<a href="http://www.ijdsjournal.org/callforpaper.html" target="">
-		<div class="sitePopUpInner">
-			<b style="font-size:15px;color:#CB0707;">IJDS- Journals</font></b><br>
-
-			<center style="margin-top:10px;"><img src="http://www.ijdsjournal.org/images/paper.gif" width="75%" hieght="50%" /></center>
-<center><img src="http://www.ijdsjournal.org/images/enter.gif" alt="Click Here" /></center>
-			<!--<b style="font-size:13px;color:#0B0B61;">IJDS -  Journals</b>-->
-		</div>
-	</a>
-</div>
 
   <div class="copyright">
-    <p>Copyright &copy;2015 <a href="http://www.ijdsjournal.org" target="blank"><font size="1"> IJDS - International Scientific And Research Group</font></a>, All rights reserved </font></p>
+    <p>Copyright &copy;2015 <a href="http://www.ijdsjournal.org" target="blank"><font size="1"> IJDS - International Journal of Dental Studies</font></a>, All rights reserved </font></p>
   </div>
 </footer></body>
 </html>
